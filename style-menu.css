@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/*Menu inicial*/
+.menu-inicial {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-items: center;
+  border-bottom: 1px solid white;
+  flex-wrap: wrap;
+}
+.menu-inicial img {
+  max-width: 100%;
+}
+.icon {
+  width: 27px;
+  height: 27px;
+}
+.logo {
+  width: 100px;
+}
+#loupe {
+  background-color: rgb(125, 128, 123);
+  width: 80px;
+  padding: 2px;
+}
+#voice-search {
+  margin-left: 10px;
+}
+.menu-inicial-pesquisa {
+  display: flex;
+  align-items: center;
+}
+.menu-inicial-pesquisa input {
+  font-size: 1.2em;
+  background-color: rgb(17, 17, 17);
+  border-radius: 10%;
+  border: none;
+  width: 500px;
+  color: white;
+  height: 25px;
+}
+.foto {
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+@media (max-width: 852px) {
+  .menu-inicial-pesquisa input {
+    width: 70%;
+  }
+  .menu-inicial {
+    flex-direction: column;
+  }
+}
