@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+body {
+  background-color: rgb(31, 29, 29);
+  color: rgb(243, 230, 230);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+p,
+h1,
+div {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+ul {
+  list-style: none;
+}
+
+/*Content*/
+.content {
+  display: flex;
+  justify-content: flex-start;
+}
+/*Videos*/
+
+iframe {
+  margin: 20px 20px 0 40px;
+  width: 95%;
+  height: 450px;
+}
+.video-info {
+  margin: 0 0 0 40px;
+  display: flex;
+  flex-direction: column;
+}
+.video-info h1 {
+  font-size: 1.7em;
+  margin-bottom: 20px;
+}
+.video-info p {
+  font-size: 1em;
+  font-weight: lighter;
+}
+.video-info img {
+  width: 28px;
+  height: 28px;
+}
+.actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+.com-item {
+  display: flex;
+  align-items: center;
+}
+.bold {
+  font-weight: normal;
+}
+.descricao h1 {
+  font-size: 1em;
+  margin-bottom: 0px;
+}
+.descricao-texto {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+/*Recomendados*/
+.recomendados {
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.recomendados img {
+  width: 50%;
+  margin: 10px;
+}
+.imagem-recomendados {
+  display: flex;
+  align-items: center;
+}
+.imagem-recomendados h1 {
+  font-size: 1em;
+  line-height: 17px;
+}
+.imagem-recomendados h2 {
+  font-size: 0.9em;
+  margin: 5px 0;
+  font-weight: lighter;
+}
+.imagem-recomendados p {
+  font-size: 0.9em;
+  font-weight: lighter;
+}
+
+/*Comentários*/
+.comentarios {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.295);
+  margin-top: 40px;
+}
+.comentarios header {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 0.6em;
+}
+.comentarios-fazer {
+  display: flex;
+}
+.comentarios-fazer textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.7px solid rgba(255, 255, 255, 0.295);
+  width: 100%;
+}
+
+@media (max-width: 852px) {
+  .content {
+    flex-direction: column;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  .video-info {
+    margin: initial;
+  }
+  .recomendados {
+    max-width: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-left: -20px;
+  }
+  .imagem-recomendados {
+    width: 100%;
+  }
+}
